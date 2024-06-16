@@ -206,7 +206,7 @@
    <li>继续走 300 米，学校就在你的右手边</li>
 </ol>
 ```
-> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol">点击查看详情<a/>
+> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol">点击查看详情</a>
 
 
 
