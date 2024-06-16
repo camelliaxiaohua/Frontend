@@ -121,4 +121,93 @@
 
 ### 第二部分 HTML基础结构
 
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        
+    </body>
+</html>
+```
+
+### 2.1 head标签
+
+1. title标签：展示网页标题内容
+
+2. meta标签：
+
+   - 设置编码集：
+      - ascii、gbk、**utf-8**
+      ```html
+      <meta charset="utf-8" />
+      ```
+
+   - 作者信息设置：
+      - name属性：作者
+      - content属性：作者信息
+      ```html
+      <meta name="Camellia·XIAOHUA" content="camelliaxiaohua.online"/>
+      ```
+
+   - meta标签关键词(keywords)设置
+      - name属性：keywords
+      - content属性：关键字、关键字...
+      ```html
+      <meta name="keywords" content="Camellia,Java,前端,后端"/>
+      ```
+
+   - meta标签的描述(description)设置
+      - name属性：description
+      - content属性：描述信息
+      ```html
+      <meta name="description" content="一个前端学习仓库" />
+      ```
+
+### 2.2 body标签
+
+1. 标题标签：
+`<h1></h1>`、`<h2></h2>`、`<h3></h3>`、`<h4></h4>`、`<h5></h5>`、`<h6></h6>`
+
+2. 段落标签：
+`<p></p>`
+
+3. 无序列表
+```html
+<ul type="circle">
+   <li>豆浆</li>
+   <li>油条</li>
+   <li>豆汁</li>
+   <li>焦圈</li>
+</ul>
+```
+<blockquote style="border-left: 4px solid #e74c3c; background-color: #f8d7da; padding: 10px;">
+    <p><strong>⚠️ 警告：</strong>不要使用type属性，它已经被弃用了。请使用 CSS list-style-type 属性作为代替。</p>
+</blockquote>
+
+> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ul">点击查看详情</a>
+
+4. 有序列表
+   - type:
+      - a 表示小写英文字母编号
+      - A 表示大写英文字母编号
+      - i 表示小写罗马数字编号
+      - I 表示大写罗马数字编号
+      - 1 表示数字编号（默认）编号类型适用于整个列表，除非在 <ol> 元素的 <li> 元素中使用不同的 type 属性。
+
+```html
+<ol type="A">
+   <li>沿这条路走到头</li>
+   <li>右转</li>
+   <li>直行穿过第一个十字路口</li>
+   <li>在第三个十字路口处左转</li>
+   <li>继续走 300 米，学校就在你的右手边</li>
+</ol>
+```
+> <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol">点击查看详情<a/>
+
+
+
 
