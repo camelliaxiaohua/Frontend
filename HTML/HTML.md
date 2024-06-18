@@ -61,25 +61,37 @@
 >- 使用p标签将这行文字封装成一个段落元素来使其在单独一行呈现。
 >- 标签可以使大写也可以是小写。
 
-3. em标签
+3. em标签  `~语义化`
 ```html
 <em>Camellia·XIAOHUA</em>
 ```
+   - 可以被网络检索到
+   - 阅读器看到em标签会改变读音。
+   - i标签只有一个斜体的效果
+
 > em元素将文本标记为强调（emphasis）格式。em元素可以嵌套，嵌套层次越深，则强调的程度越深。
+
 
 4. a标签
    - herf：跳转链接
    - title：鼠标悬停，提示文字内容
    - target属性用于指定链接如何变成页面。
 ```html
+<a href="https://camelliaxiaohua.online" title="Camellia·XIAOHUA的个人学习记录网站" target="_blank">Camellia·XIAOHUA</a>
 ```
 
 5. HTML空格
  - `&nbsp;`
 
+6. strong标签 `~语义化`
+```html
+<strong>Camellia.xiaohua</strong>
+```
+> `<b>`只有加粗效果，没有语义化
 
+                 
 #### 1.4 标签的属性
-
+ 
 1. 属性必须包含
    - 一个空格，它在属性和元素名称之间。如果一个元素具有多个属性，则每个属性之间必须由空格分隔。
    - 属性名称，后面跟着一个等于号。
@@ -116,6 +128,7 @@
 | “         | &quot;          |
 | ‘         | &apos;          |
 | &         | &amp;           |
+
 
 
 
@@ -209,5 +222,24 @@
 > <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol">点击查看详情</a>
 
 
+## 2.3 超链接标签
 
+1. 块级链接
+任何内容，甚至块级内容都可以作为显示链接。如果想让标题内容变为链接，就把它包裹在锚点内容（<a>）内，像这个代码段一样：
+```html
+<a href="https://developer.mozilla.org/zh-CN/">
+  <h1>MDN Web 文档</h1>
+</a>
+<p>自从 2005 年起，就开始记载包括 CSS、HTML、JavaScript 等网络技术。</p>
+```
 
+2. 图片链接
+如果需要链接的图片，使用<a>全文来概括要链接的<img>。
+```html
+<a href="https://developer.mozilla.org/zh-CN/">
+  <img src="mdn_logo.svg" alt="MDN Web 文档主页" />
+</a>
+```
+3. title：鼠标悬停，提示文字内容
+
+4. target属性用于指定链接如何变成页面。
