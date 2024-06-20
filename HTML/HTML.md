@@ -243,3 +243,30 @@
 3. title：鼠标悬停，提示文字内容
 
 4. target属性用于指定链接如何变成页面。
+
+
+## 2.4 插入图片
+
+- **插入本地图片**：
+```html
+<img src="images/dinosaur.jpg" alt="恐龙" />
+```
+
+- **插入网络图片**：
+```html
+<img src="images/dinosaur.jpg" alt="恐龙" />
+```
+> 不建议使用绝对 URL 进行链接。你需要托管你想要在网站上使用的图像，在比较简单的情况下，通常我们会把网站的图像保存在与 HTML 相同的服务器上。此外，从维护的角度来说，使用相对 URL 比绝对 URL 更有效率（当你将网站迁移到不同的域名时，你不需要更新所有 URL，使其包含新域名）。在更高级的设置中，你可能会使用内容分发网络（CDN）来传递图像。
+
+- **img标签属性**：
+   1. alt：它的值应该是图片的文本描述，用于在图片无法显示或者因为网速慢而加载缓慢的情况下使用。
+   2. title: 鼠标悬停展示提示。
+   3. width：宽度
+   4. height：高度
+```html
+<img
+  src="dinosaur.jpg"
+  alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth"
+  title="A T-Rex on display in the Manchester University Museum" />
+```
+
