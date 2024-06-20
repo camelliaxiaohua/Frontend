@@ -89,9 +89,9 @@
 ```
 > `<b>`只有加粗效果，没有语义化
 
-                 
+
 #### 1.4 标签的属性
- 
+
 1. 属性必须包含
    - 一个空格，它在属性和元素名称之间。如果一个元素具有多个属性，则每个属性之间必须由空格分隔。
    - 属性名称，后面跟着一个等于号。
@@ -146,7 +146,7 @@
 </html>
 ```
 
-### 2.1 head标签
+#### 2.1 head标签
 
 1. title标签：展示网页标题内容
 
@@ -179,7 +179,7 @@
       <meta name="description" content="一个前端学习仓库" />
       ```
 
-### 2.2 body标签
+#### 2.2 body标签
 
 1. 标题标签：
 `<h1></h1>`、`<h2></h2>`、`<h3></h3>`、`<h4></h4>`、`<h5></h5>`、`<h6></h6>`
@@ -222,7 +222,7 @@
 > <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol">点击查看详情</a>
 
 
-## 2.3 超链接标签
+#### 2.3 超链接标签
 
 1. 块级链接
 任何内容，甚至块级内容都可以作为显示链接。如果想让标题内容变为链接，就把它包裹在锚点内容（<a>）内，像这个代码段一样：
@@ -245,7 +245,7 @@
 4. target属性用于指定链接如何变成页面。
 
 
-## 2.4 插入图片
+#### 2.4 插入图片
 
 - **插入本地图片**：
 ```html
@@ -270,3 +270,58 @@
   title="A T-Rex on display in the Manchester University Museum" />
 ```
 
+#### 2.5 相对路径和绝对路径
+
+1. 相对路径引用
+   - ./表示当前目录（默认，可以省略）
+      1. 页面引用平级目录下的图片
+      2. 页面引用平级目录文件夹下的图片
+   - ../页面引用上一级目录文件夹下的图片
+
+2. 绝对路径引用
+
+#### 2.6 表格
+
+1. 表格基础标签
+   - `<table>`：定义表格的开始和结束。
+   - `<tr>（table row）`：定义表格中的一行。
+   - `<th>（table header）`：定义表头单元格，通常显示为加粗居中的文本。
+   - `<td>（table data）`：定义表格中的标准单元格。
+   - `<caption>`：标签为表格添加标题。
+
+2. 表格的样式标签
+   - border：设置表格的边框。
+   - cellspacing：设置表格之间边框的距离。
+   - cellpadding：指定表格单元格内容与单元格边框之间的空白（内边距）。
+   - align：用于设置表格内容的对齐方式，包括水平对齐和垂直对齐。
+   - bgcolor：设置表格的背景颜色。
+
+   ```html
+   <table border="1px" cellspacing="0" cellpadding="20px" align="center">
+        <caption>User Information Table</caption>
+        <tr bgcolor="pink" align="center">
+            <th>name</th>
+            <th>age</th>
+            <th>city</th>
+            <th>job</th>
+        </tr>
+        <tr align="center">
+            <td>Camellia</td>
+            <td>23</td>
+            <td>杭州</td>
+            <td>Java工程师</td>
+        </tr>
+        <tr align="center">
+            <td>XIAOHUA</td>
+            <td>22</td>
+            <td>南京</td>
+            <td>PHP工程师</td>
+        </tr>
+        <tr align="center">
+            <td>HAHA</td>
+            <td>27</td>
+            <td>上海</td>
+            <td>算法工程师</td>
+        </tr>
+    </table>
+   ```
