@@ -325,3 +325,48 @@
         </tr>
     </table>
    ```
+3. 表格的跨行/跨列合并
+
+   - 跨列操作：保留左边的td,删掉右边的td,让左边的td合并右边的td colspan="2"
+
+   - ```html
+     <table border="1px" cellspacing="0" cellpadding="10px" align="center">
+             <tr>
+                 <th>姓名</th>
+                 <th colspan="2">手机号</th>
+             </tr>
+     
+             <tr>
+                 <td>张三</td>
+                 <td>135xxx</td>
+                 <td>138xxx</td>
+             </tr>
+     
+             <tr>
+                 <td>李四</td>
+                 <td>131xxx</td>
+                 <td>199xxx</td>
+             </tr>
+         </table>
+     ```
+
+   - 跨行操作：保留上面的td,删掉下面的td,让上面的td合并下面的td rowspan="2"
+
+   - ```html
+     <table border="1px" cellspacing="0" cellpadding="10px" align="center">
+             <tr>
+                 <th>姓名</th>
+                 <td>Camellia</td>
+                 <td>XIAOHUA</td>
+             </tr>
+             <tr>
+                 <th rowspan="2">手机号</th>
+                 <td>132xxx</td>
+                 <td>3214xxx</td>
+             </tr>
+             <tr>
+                 <td>136xxx</td>
+                 <td>167xxx</td>
+             </tr>
+         </table>
+     ```
