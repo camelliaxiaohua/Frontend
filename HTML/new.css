@@ -6,33 +6,33 @@
 
 /* pt-serif-regular - latin */
 @font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: normal;
+	font-family: 'PT Serif';
+	font-style: normal;
+	font-weight: normal;
 	src: local('PT Serif'), local('PTSerif-Regular'), url('./newsprint/pt-serif-v11-latin-regular.woff2') format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* pt-serif-italic - latin */
 @font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: normal;
+	font-family: 'PT Serif';
+	font-style: italic;
+	font-weight: normal;
 	src: local('PT Serif Italic'), local('PTSerif-Italic'), url('./newsprint/pt-serif-v11-latin-italic.woff2') format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* pt-serif-700 - latin */
 @font-face {
-  font-family: 'PT Serif';
-  font-style: normal;
-  font-weight: bold;
+	font-family: 'PT Serif';
+	font-style: normal;
+	font-weight: bold;
 	src: local('PT Serif Bold'), local('PTSerif-Bold'), url('./newsprint/pt-serif-v11-latin-700.woff2') format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* pt-serif-700italic - latin */
 @font-face {
-  font-family: 'PT Serif';
-  font-style: italic;
-  font-weight: bold;
+	font-family: 'PT Serif';
+	font-style: italic;
+	font-weight: bold;
 	src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'), url('./newsprint/pt-serif-v11-latin-700italic.woff2') format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -47,7 +47,7 @@
 	--rawblock-edit-panel-bd: #e5e5e5;
 
 	--select-text-bg-color: rgba(32, 43, 51, 0.63);
-  --select-text-font-color: white;
+	--select-text-font-color: white;
 }
 
 pre {
@@ -87,7 +87,7 @@ html, body {
 
 @media only screen and (min-width: 1400px) {
 	#write {
-			max-width: 914px;
+		max-width: 914px;
 	}
 }
 
@@ -343,7 +343,7 @@ hr {
 	content: '\221A';
 	display: inline-block;
 	width: 1.25rem;
-  	height: 1.6rem;
+	height: 1.6rem;
 	vertical-align: middle;
 	text-align: center;
 	color: #ddd;
@@ -415,7 +415,7 @@ hr {
 #typora-sidebar {
 	background-color: #f3f2ee;
 	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
-  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
 }
 
 .pin-outline #typora-sidebar {
@@ -429,25 +429,25 @@ hr {
 }
 
 .outline-item:hover {
-  background-color: #dadada;
-  border-left: 28px solid #dadada;
-  border-right: 18px solid #dadada;
+	background-color: #dadada;
+	border-left: 28px solid #dadada;
+	border-right: 18px solid #dadada;
 }
 
 .typora-node .outline-item:hover {
-  	border-right: 28px solid #dadada;
+	border-right: 28px solid #dadada;
 }
 
 .outline-expander:before {
-  content: "\f0da";
-  font-family: FontAwesome;
-  font-size:14px;
-  top: 1px;
+	content: "\f0da";
+	font-family: FontAwesome;
+	font-size:14px;
+	top: 1px;
 }
 
 .outline-expander:hover:before,
 .outline-item-open>.outline-item>.outline-expander:before {
-  content: "\f0d7";
+	content: "\f0d7";
 }
 
 .modal-content {
@@ -478,7 +478,7 @@ hr {
 
 header, .context-menu, .megamenu-content, footer {
 	font-family: "PT Serif", 'Times New Roman', Times, serif;
-    color: #1f0909;
+	color: #1f0909;
 }
 
 #megamenu-back-btn {
@@ -500,11 +500,11 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 #recent-file-panel tbody tr:nth-child(2n-1) {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .megamenu-menu-panel tbody tr:hover td:nth-child(2) {
-    color: inherit;
+	color: inherit;
 }
 
 .megamenu-menu-panel .btn {
@@ -521,7 +521,7 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 #typora-quick-open {
-    background-color: inherit;
+	background-color: inherit;
 }
 
 .md-diagram-panel {
@@ -554,7 +554,7 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 .file-list-item{
-    opacity:1 !important;
+	opacity:1 !important;
 }
 
 .file-library-node.active>.file-node-background{
@@ -578,7 +578,7 @@ input {
 }
 
 .megamenu-menu-header #megamenu-menu-header-title,
-.megamenu-menu-header:hover, 
+.megamenu-menu-header:hover,
 .megamenu-menu-header:focus {
 	color: inherit;
 }
@@ -612,8 +612,8 @@ input {
 	color: white;
 }
 
-.export-detail, .light .export-detail, 
-.light .export-item.active, 
+.export-detail, .light .export-detail,
+.light .export-item.active,
 .light .export-items-list-control {
 	background: #e0e0e0;
 	border-radius: 2px;
